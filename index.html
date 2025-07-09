@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dawson Insurance Agency</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f9f9f9;
+}
+header {
+background-color: #fff;
+color: rgb(6, 20, 221);
+padding: 20px;
+text-align: center;
+}
+header img {
+width: 150px;
+margin-bottom: 10px;
+}
+nav {
+background-color: #0066cc;
+padding: 10px;
+text-align: center;
+}
+nav a {
+color: white;
+margin: 0 15px;
+text-decoration: none;
+font-weight: bold;
+}
+section {
+padding: 30px;
+}
+.services, .contact {
+background-color: #e0e0e0;
+margin: 20px auto;
+padding: 20px;
+border-radius: 8px;
+max-width: 800px;
+}
+button {
+background-color: #004080;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+#servicesList {
+display: none;
+margin-top: 20px;
+}
+.service-item img {
+width: 100%;
+max-height: 200px;
+object-fit: cover;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+.banner {
+width: 100%;
+max-height: 300px;
+object-fit: cover;
+margin-top: 20px;
+border-radius: 8px;
+}
+footer {
+background-color: #004080;
+color: white;
+text-align: center;
+padding: 15px;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+</style>
+<script>
+function toggleServices() {
+var services = document.getElementById("servicesList");
+if (services.style.display === "none") {
+services.style.display = "block";
+} else {
+services.style.display = "none";
+}
+}
+</script>
+</head>
+<body>
+<header>
+<img src="logo.png" alt="Dawson Insurance Logo">
+<h1>Dawson Insurance Agency</h1>
+<p>Your Trusted Insurance Partner</p>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+<section id="home">
+<h2>Welcome to Dawson Insurance Agency</h2>
+<p>We provide reliable and affordable insurance solutions tailored to
+your needs. Whether you're looking for car, health, or life insurance, we’ve
+got you covered.</p>
+<img class="banner" src="burnner3.png" alt="Insurance Banner">
+</section>
+<section class="services" id="services">
+<h2>Our Services</h2>
+<button onclick="toggleServices()">View All Services</button>
+<div id="servicesList">
+<div class="service-item">
+<img src="motor.jpg" alt="Motor Insurance">
+<strong>Motor Insurance</strong>
+<ul>
+<li>Third Party Insurance</li>
+<li>Comprehensive Insurance</li>
+</ul>
+</div>
+<div class="service-item">
+<img src="health.jpeg" alt="Health Insurance">
+<strong>Health Insurance</strong>
+<ul>
+<li>Individual or Family Cover</li>
+<li>Corporate/Employee Cover</li>
+</ul>
+</div>
+<div class="service-item">
+<img src="life.png" alt="Life Insurance">
+<strong>Life Insurance</strong>
+<ul>
+<li>Family protection in case of death or disability</li>
+</ul>
+</div>
+<div class="service-item">
+<img src="busness.jpg" alt="Business Insurance">
+<strong>Business Insurance</strong>
+<ul>
+<li>Protection from loss or disasters affecting business
+property</li>
+</ul>
+</div>
+<div class="service-item">
+<img src="fire.jpg" alt="Fire Insurance">
+<strong>Fire Insurance</strong>
+<ul>
+<li>Protection for buildings or property against fire
+damage</li>
+</ul>
+</div>
+<div class="service-item">
+<img src="travel.jpg" alt="Travel Insurance">
+<strong>Travel Insurance</strong>
+<ul>
+<li>Emergency medical or loss coverage while traveling</li>
+</ul>
+</div>
+<div class="service-item">
+<img src="accident.png" alt="Personal Accident Insurance">
+<strong>Personal Accident Insurance</strong>
+<ul>
+<li>Compensation in case of personal injury or
+disability</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p><strong>Address:</strong> Njiro, Tanesco Street, Arusha,
+Tanzania</p>
+<p><strong>Phone:</strong> +255-785-207-653</p>
+<p><strong>Email:</strong> info@dawsoninsurance.com</p>
+</section>
+<footer>
+<p>&copy; 2025 Dawson Insurance Agency. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+
